@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+  padding: 50px 0 50px 0;
+}
+
+.hero-img {
+  position: absolute;
+  top: -114px;
+  left: calc(50% - 116px);
+  margin: 0px;
+  z-index: 0;
+  // width: 750px;
+  @media screen and (max-width: 1024px) {
+    top: -114px;
+    left: calc(25%);
+  }
+  @media screen and (max-width: 768px) {
+    top: -80px;
+    left: calc(25%);
+  }
+  @media screen and (max-width: 425px) {
+    // width: 350px;
+    top: -80px;
+    left: calc(10%);
+  }
+}
+
+.decor-1 {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  z-index: -1;
+
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
+.hero-big {
+  font-size: 50px;
+}
+.hero-name {
+  color: #fcc83a;
+}
+
+.hero h2 {
+  font-family: Montserrat;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

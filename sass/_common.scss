@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2.14286;
+  font-weight: 300;
+  color: #353744;
+  background-color: #ffffff;
+  // .container {
+    // background-color: violet;
+  //   margin: 0px auto;
+  //   width: 100%;
+  //   @media screen and (min-width: 1153px) {
+  //     max-width: 1152px;
+  //     padding: 0px 53px 0px 53px;
+  //   }
+  //   @media screen and (max-width: $desktop1152) {
+  //     max-width: $desktop1152;
+  //     padding: 0px 53px 0px 53px;
+  //   }
+  //   @media screen and (max-width: $desktop1024) {
+  //     max-width: $desktop1024;
+  //     padding: 0px 45px 0px 45px;
+  //   }
+  //   @media screen and (max-width: $tablet768) {
+  //     max-width: $tablet768;
+  //     padding: 0px 35px 0px 35px;
+  //   }
+  //   @media screen and (max-width: $mobile475) {
+  //     max-width: $mobile475;
+  //     padding: 0px 20px 0px 20px;
+  //   }
+  // }
+}
+
+ul, ol,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-accent {
+  color: #ffffff;
+  background-color: #fcc83a;
+  border-color: #fcc83a;
+  box-shadow: 3px 3px 9px 0 rgba(107, 107, 107, 0.14);
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.button{
+  // position: relative;
+  // overflow: hidden;
+  display: inline-block;
+  padding: 20px 28px;
+  font-size: 12px;
+  line-height: 1.25;
+  border: 2px solid;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+
+&:hover,
+&:focus {
+    background: $color_accent;
+    color: $color_white;
+    border: 1px solid $color_accent;
+}
+}
+
