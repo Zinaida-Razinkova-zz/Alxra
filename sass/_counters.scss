@@ -33,4 +33,7 @@
     line-height: 1.71429;
     letter-spacing: .2em;
     color: #353744;
+     @media screen and (max-width: 600px) {
+    font-size: 10px;
+  }
 }

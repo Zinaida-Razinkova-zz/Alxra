@@ -23,7 +23,7 @@
       <nav class="header-nav ">
       <button
       class="header-button__menu"
-      aria-controls="header-menu-container"
+      aria-controls="header-menu"
       aria-expanded="false"
       type="button"
       data-menu-button>
@@ -32,7 +32,7 @@
         <use class="header-button__menu-burger" href="./images/sprite.svg#burgermenu"></use>
       </svg>
     </button>
-    <ul class="header-menu" data-menu>
+    <ul class="header-menu" data-menu id="header-menu">
     <li class="header-menu__item"><a href="#" class="header-menu__link header-menu__link-active">Главная</a></li>
     <li class="header-menu__item"><a href="about.html" class="header-menu__link">Обо мне</a></li>
     <li class="header-menu__item"><a href="#" class="header-menu__link">Портфолио</a></li>
@@ -43,42 +43,41 @@
   </header>
 <main>
 <section class="hero section section-md section-relative">
-<img class="decor-1" src="./images/hero-decor.png" alt="" width="200px">
+<img class="decor-1" src="./images/hero-decor.png" alt="Декоративный элемент" width="200">
 <div class="container ">
   <div class="row row-30 align-items-sm-center">
-    <div class="col-md-5 col-xl-6">
-      <h1 class="">Здравствуйте<br>
-        <span class="hero-big">Я
-        <span class="hero-name">Алексей Разиньков</span></span></h1>
+    <div class="col-sm-12 col-md-6 col-xl-6 hero-block">
+        <h2>Здравствуйте</h2>
+        <h1 class="hero-big">Я <span class="hero-name">Алексей Разиньков</span></h1>
         <h2>инженер-конструктор по металлам</h2>
         <p>Конструктивная и технологическая разработка оборудования. <br> Документация и ведение изделий на производстве.</p>
         <a href="#contacts" class="button-accent button">Связаться cо мной</a>
     </div>
-    <div class="col-md-7 col-xl-6">
-      <img class="hero-img" src="./images/alx.png" alt="Портрет" width="750px">
+    <div class="col-md-6 col-xl-6">
+      <img class="hero-img" src="./images/alx.png" alt="Фото Алексей Разиньков" width="750">
     </div>
   </div>  
 </div>
 </section>
 <section class="about section section-lg section-lg-1 section-relative bg-transparent">
   <div class="container">
-    <div class="row row-30 flex-lg-row-reverse align-items-center">
+    <div class="row row-30 align-items-center">
+      <div class="col-md-6 col-lg-5">
+        <img class="" src="./images/alx-3.jpg" alt="Портрет" width="400">
+      </div>
       <div class="col-md-6 col-lg-7">
         <h3>Обо мне</h3>
         <p>Я инженер-конструктор с более чем 20 летним стажем. Основной вид деятельности конструирование таких изделий как: конвейеры, лебёдки, подъемно-транспортное оборудование, металлоконструкции... </p>
           <a href="about.html" class="button-accent button">Читать больше</a>
         </div>
-      <div class="col-md-6 col-lg-5">
-        <img class="" src="./images/alx-3.jpg" alt="Портрет" width="400px">
-      </div>
-    </div>
-    
+
+    </div>   
   </div>
   <div>
-    <img class="decor-2" src="./images/decor-2.png" alt="" width="472">
+    <img class="decor-2" src="./images/decor-2.png" alt="Декоративный элемент" width="472">
   </div>
   <div class="">
-    <img class="decor-3" src="./images/decor-3.png" alt="" width="1340">
+    <img class="decor-3" src="./images/decor-3.png" alt="Декоративный элемент" width="1340">
   </div>
 </section>
 <section class="counters section-md bg-transparent">
@@ -87,9 +86,9 @@
       <div class="col-6 col-md-3 col-xl-2">
         <div class="box-counter">
           <div class="box-counter-main">
-            <p class="counter animated-first">
+            <h3 class="counter animated-first">
               20+
-            </p>
+            </h3>
             <p class="box-counter-title">ЛЕТ <br>
               ОПЫТА</p>
           </div>
@@ -98,9 +97,9 @@
       <div class="col-6 col-md-3 col-xl-2">
         <div class="box-counter">
           <div class="box-counter-main">
-            <p class="counter animated-first">
+            <h3 class="counter animated-first">
               54
-            </p>
+            </h3>
             <p class="box-counter-title">ЗАВЕРШЁННЫХ ПРОЕКТА</p>
           </div>
         </div>
@@ -108,9 +107,9 @@
       <div class="col-6 col-md-3 col-xl-2">
         <div class="box-counter">
           <div class="box-counter-main">
-            <p class="counter animated-first">
+            <h3 class="counter animated-first">
               500
-            </p>
+            </h3>
             <p class="box-counter-title">ГОТОВЫХ ИЗДЕЛИЙ</p>
           </div>
         </div>
@@ -118,9 +117,9 @@
       <div class="col-6 col-md-3 col-xl-2">
         <div class="box-counter">
           <div class="box-counter-main">
-            <p class="counter animated-first">
+            <h3 class="counter animated-first">
               1000
-            </p>
+            </h3>
             <p class="box-counter-title">3D <br> МОДЕЛЕЙ</p>
           </div>
         </div>
@@ -128,7 +127,6 @@
     </div>
   </div>
 </section>
-
 <section class="services section section-md bg-transparent section-relative text-center">
   <div class="container">
     <h6>УСЛУГИ</h6>
@@ -136,8 +134,7 @@
     <p>My solutions are not limited just by business coaching, <br>
       I provide a variety of services for everyone who is looking for proper</p>
 
-
-<div class="owl-carousel owl-theme ">
+  <div class="owl-carousel owl-theme ">
   <div class="services-content">
     <svg class="services-svg" width="40" height="40">
       <use class="" href="./images/sprite.svg#pencil"></use>
@@ -146,7 +143,7 @@
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
   </div>
   <div class="services-content"> 
-    <svg class="services-svg"width="40" height="40">
+    <svg class="services-svg" width="40" height="40">
       <use class="" href="./images/sprite.svg#display"></use>
     </svg>
     <h4 class="services-title">Development</h4>
@@ -182,16 +179,8 @@
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Rerum dolorum repellat ullam ipsam recusandae, a rem.</p> 
   </div>
 </div>
-    </div>
-
-
-
-
-
+</div>
 </section>
-
-
-
 <section id="contacts" class="contacts">
   <div class="container">
     <div class="row row-30 align-items-sm-center">
@@ -200,9 +189,9 @@
         <h2 class="contacts-form__title">Напишите мне</h2>
         <div class="contacts-form__block">
           <div>
-            <label class="contacts-form__label">Имя</label>
             <input
               class="contacts-form__input-name"
+              placeholder="Ваше имя"
               type="text"
               name="name"
               pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -210,8 +199,8 @@
             />
           </div>
           <div>
-            <label class="contacts-form__label">Телефон</label>
             <input
+            placeholder="Телефон"
               class="contacts-form__input-phone"
               type="tel"
               name="tel"
@@ -221,17 +210,16 @@
           </div>
         </div>
         <div>
-          <label class="contacts-form__label">Email</label>
           <input
             class="contacts-form__input-email"
+            placeholder="E-mail"
             type="text"
             name="email"
             required
           />
         </div>
         <div>
-          <label class="contacts-form__label">Сообщение</label>
-          <textarea  class="contacts-form__input-message" type="text" name="text" cols="50" rows="5"></textarea>
+          <textarea  class="contacts-form__input-message" placeholder="Сообщение" name="text" cols="40" rows="3"></textarea>
         </div>
         <button type="button" class="button-accent button contacts-button">
           Отправить
@@ -241,9 +229,9 @@
       </div>
       <div class="col-md-5 col-xl-5">
         <img
-        class=""
-        src="./images/alx-2.jpg"
-        alt="Contacts"
+        class="contacts-img"
+        src="./images/alx-7.jpg"
+        alt="Офис для работы"
         width="420"
       />
       </div>
@@ -251,25 +239,22 @@
   </div>
 </section>
 </main>
-
-
-
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Алексей Разиньков</p>
         <p>Инженер-конструктор</p>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Телефон:</p>
         <a href="tel:+380990079646">+38(099)007-96-46</a>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Почта:</p>
         <a href="mailto:alx.ra@gmail.com">alx.ra@gmail.com</a>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Соцсети:</p>
         <ul class="footer-list">
           <li class="footer-item"><a href="https://www.instagram.com/alxr.engineer/" target="_blank">
@@ -284,12 +269,14 @@
           </a></li>
         </ul>
       </div>
-      
     </div>
   </div>
 </footer>
-<div class="dev">© 2022 | All Rights Reserved |  Developed with by <a href="https://www.linkedin.com/in/zinaida-razinkova/" target="_blank">Zinaida Razinkova</a> </div>
-
+<div class="dev">
+  <div class="container">
+    <div >© 2022 | All Rights Reserved | Developed with by <a href="https://www.linkedin.com/in/zinaida-razinkova/" target="_blank">Zinaida Razinkova</a> </div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>

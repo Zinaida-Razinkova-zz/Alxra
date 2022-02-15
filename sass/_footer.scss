@@ -41,17 +41,17 @@
 }
 
 .dev{
-    padding: 30px 0;
+    padding: 10px 0;
     text-align: center;
     background-color: #25272e;
-    color:#fff;
+    color:$color_medium;
     @media screen and (max-width: 1024px) {
         font-size: 10px;
       }
 }
 
 .dev a {
-    color:#fff;
+    color:$color_medium;
     &:hover,
     &:focus {
    color:  $color_accent2;
