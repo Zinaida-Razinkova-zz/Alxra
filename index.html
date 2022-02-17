@@ -11,7 +11,9 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
@@ -33,10 +35,10 @@
       </svg>
     </button>
     <ul class="header-menu" data-menu id="header-menu">
-    <li class="header-menu__item"><a href="#" class="header-menu__link header-menu__link-active">Главная</a></li>
+    <li class="header-menu__item"><a href="index.html" class="header-menu__link header-menu__link-active">Главная</a></li>
     <li class="header-menu__item"><a href="about.html" class="header-menu__link">Обо мне</a></li>
-    <li class="header-menu__item"><a href="#" class="header-menu__link">Портфолио</a></li>
-    <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+    <li class="header-menu__item"><a href="portfolio.html" class="header-menu__link">Портфолио</a></li>
+    <li class="header-menu__item"><a href="services.html" class="header-menu__link">Услуги</a></li>
     </ul>
     </nav>
     </div>
@@ -59,7 +61,7 @@
   </div>  
 </div>
 </section>
-<section class="about section section-lg section-lg-1 section-relative bg-transparent">
+<section class="about section section-lg section-lg-1 section-relative">
   <div class="container">
     <div class="row row-30 align-items-center">
       <div class="col-md-6 col-lg-5">
@@ -67,7 +69,7 @@
       </div>
       <div class="col-md-6 col-lg-7">
         <h3>Обо мне</h3>
-        <p>Я инженер-конструктор с более чем 20 летним стажем. Основной вид деятельности конструирование таких изделий как: конвейеры, лебёдки, подъемно-транспортное оборудование, металлоконструкции... </p>
+        <p>Я инженер-конструктор с более чем 20 летним стажем. Основной вид деятельности конструирование таких изделий как: конвейеры, лебёдки, подъемно-транспортное оборудование, шахтное оборудование, металлоконструкции... </p>
           <a href="about.html" class="button-accent button">Читать больше</a>
         </div>
 
@@ -77,7 +79,7 @@
     <img class="decor-2" src="./images/decor-2.png" alt="Декоративный элемент" width="472">
   </div>
   <div class="">
-    <img class="decor-3" src="./images/decor-3.png" alt="Декоративный элемент" width="1340">
+    <img class="decor-3" src="./images/decor-3.png" alt="Декоративный элемент" width="1140">
   </div>
 </section>
 <section class="counters section-md bg-transparent">
@@ -130,53 +132,58 @@
 <section class="services section section-md bg-transparent section-relative text-center">
   <div class="container">
     <h6>УСЛУГИ</h6>
-    <h3>ЧТО Я ПРЕДЛАГАЮ</h3>
-    <p>My solutions are not limited just by business coaching, <br>
-      I provide a variety of services for everyone who is looking for proper</p>
-
+    <h3>Что я предлагаю</h3>
   <div class="owl-carousel owl-theme ">
+    <div class="services-content">
+      <svg class="services-svg" width="40" height="40">
+        <use class="" href="./images/sprite.svg#3d"></use>
+      </svg>
+      <h4 class="services-title">3D проектирование</h4>
+      <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
+    </div>
   <div class="services-content">
     <svg class="services-svg" width="40" height="40">
       <use class="" href="./images/sprite.svg#pencil"></use>
     </svg>
-    <h4 class="services-title">Management</h4>
-    <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
+    <h4 class="services-title">Чертежи</h4>
+    <p class="services-paragraf">Изготовление чертежей по вашим ???</p> 
   </div>
   <div class="services-content"> 
     <svg class="services-svg" width="40" height="40">
       <use class="" href="./images/sprite.svg#display"></use>
     </svg>
-    <h4 class="services-title">Development</h4>
+    <h4 class="services-title">Документация</h4>
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
   </div>
   <div class="services-content"> 
     <svg class="services-svg" width="40" height="40">
-      <use class="" href="./images/sprite.svg#cog"></use>
+      <use class="" href="./images/sprite.svg#engineering"></use>
     </svg>
-    <h4 class="services-title">Public</h4>
+    <h4 class="services-title">Разработка</h4>
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
   </div>
   <div class="services-content"> 
     <svg class="services-svg" width="40" height="40">
-      <use class="" href="./images/sprite.svg#pencil"></use>
+      <use class="" href="./images/sprite.svg#cogs"></use>
     </svg>
-    <h4 class="services-title">Team </h4>
+    <h4 class="services-title">Сборка </h4>
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Voluptate vitae ex aspernatur maxime debitis fugiat quis!</p> 
   </div>
   <div class="services-content">
     <svg class="services-svg" width="40" height="40">
-      <use class="" href="./images/sprite.svg#display"></use>
+      <use class="" href="./images/sprite.svg#flow"></use>
     </svg>
-    <h4 class="services-title">Assessments</h4>
+    <h4 class="services-title">Производство</h4>
     <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Rerum dolorum repellat ullam ipsam recusandae, a rem.</p> 
   </div>
   <div class="services-content">
     <svg class="services-svg" width="40" height="40">
-      <use class="" href="./images/sprite.svg#cog"></use>
+      <use class="" href="./images/sprite.svg#check"></use>
     </svg>
     <h4 class="services-title">
-      Coaching</h4>
-    <p class="services-paragraf">Lorem ipsum dolor sit amet consectetur elit. Rerum dolorum repellat ullam ipsam recusandae, a rem.</p> 
+      Контроль</h4>
+    <p class="services-paragraf">
+      Lorem ipsum dolor sit amet consectetur elit. Rerum dolorum repellat ullam ipsam recusandae, a rem.</p> 
   </div>
 </div>
 </div>
@@ -252,7 +259,7 @@
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Почта:</p>
-        <a href="mailto:alx.ra@gmail.com">alx.ra@gmail.com</a>
+        <a href="mailto:alx.ra@gmail.com">alxraa@gmail.com</a>
       </div>
       <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
         <p>Соцсети:</p>

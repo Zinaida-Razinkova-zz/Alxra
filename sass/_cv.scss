@@ -1,45 +1,31 @@
 .presentation {
+  padding-top: 200px;
   padding-bottom: 30px;
-  position: relative;
+}
+.presentation h6 {
+  color: $color_accent2;
 }
 
-.presentation-bg {
-  position: relative;
-  top: -114px;
-  z-index: 0;
-  height: 396px;
-  background-image: url(../images/cv-bg2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.presentation h3,
+.cv h2 {
+  font-family: Playfair;
+  font-style: bold;
+  font-size: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.presentation-title {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: inline-block;
-}
-.presentation-line {
-  position: relative;
+.presentation p {
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
-.presentation-line::before {
-  position: absolute;
-  left: 35%;
-  top: 120%;
-
-  display: inline-block;
-  width: 60px;
-  height: 3px;
-  content: "";
-  background-color: $color_accent2;
+.presentation-text {
+  font-weight: bold;
 }
 
-.presentation-text{
-    margin-top: -70px;
-    margin-bottom: 0;
+.presentation-img {
+  margin: 0 auto;
 }
 .cv-line {
   position: relative;
@@ -58,14 +44,11 @@
 }
 
 .cv {
+  position: relative;
   padding: 100px 0;
   @media screen and (max-width: 1024px) {
     padding: 50px 0;
   }
-}
-
-.cv h2 {
-  color: $color_accent2;
 }
 
 .cv-block {
@@ -82,8 +65,8 @@
 }
 
 .cv ul {
-    margin: 0;
-    padding-left: 50px;
+  margin: 0;
+  padding-left: 50px;
 }
 
 .cv-img {
@@ -111,5 +94,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
 
+.decor-7 {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  z-index: -1;
 }
