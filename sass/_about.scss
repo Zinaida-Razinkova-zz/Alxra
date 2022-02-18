@@ -1,39 +1,33 @@
 .about {
-padding: 100px 0 50px 0;
-position: relative;
-@media screen and (max-width: 767px) {
-  padding: 30px 0 30px 0;
+  padding-top: 160px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+  }
 }
+.about h6 {
+  color: $color_accent2;
 }
 
-.about h3 {
+.about h3,
+.cv h2 {
   font-family: Playfair;
   font-style: bold;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .about p {
-  margin: 0;
-}
-.about img {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-  
-}
-.decor-2 {
-    position: absolute;
-    top: -260px;
-    right: 0px;
-    z-index: -1;
-  }
-
-.decor-3 {
-    position: absolute;
-    top: calc( 100% - 190px);
-    right: 0;
-    z-index: -1;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
+.about-text {
+  font-weight: bold;
+}
+
+.about-img {
+  margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+.owl-nav {
+  display: none;
+}
+
+.offer {
+  padding: 50px 0;
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+}
+
+.offer h6 {
+  color: $color_accent2;
+}
+
+.offer h3 {
+  font-family: Playfair;
+  font-style: bold;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.offer-content {
+  min-height: 250px;
+  padding: 15px;
+  background-color: rgb(255, 243, 189);
+  box-shadow: 3px 3px 9px 0 rgba(107, 107, 107, 0.14);
+  margin: 20px 0;
+
+  &:hover,
+  &:focus {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    background-color: $color_accent;
+    .services-svg {
+      fill: #fff;
+    }
+    .services-title {
+      color: #fff;
+    }
+    .services-paragraf {
+      color: #fff;
+    }
+  }
+}
+
+.offer-content h4,
+.offer-content p {
+  margin: 20px 0 0 0;
+}
+.offer-content h4 {
+  font-size: 18px;
+}
+
+.offer-content p {
+  font-size: 12px;
+  color: $color_medium;
+}
+
+.offer-content svg {
+  fill: $color_accent2;
+}

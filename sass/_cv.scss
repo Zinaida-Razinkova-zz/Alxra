@@ -1,32 +1,11 @@
-.presentation {
-  padding-top: 200px;
-  padding-bottom: 30px;
-}
-.presentation h6 {
-  color: $color_accent2;
-}
-
-.presentation h3,
-.cv h2 {
-  font-family: Playfair;
-  font-style: bold;
-  font-size: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.cv {
+  position: relative;
+  padding: 100px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 50px 0;
+  }
 }
 
-.presentation p {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.presentation-text {
-  font-weight: bold;
-}
-
-.presentation-img {
-  margin: 0 auto;
-}
 .cv-line {
   position: relative;
   margin-left: 50px;
@@ -41,14 +20,6 @@
   height: 2px;
   content: "";
   background-color: $color_accent2;
-}
-
-.cv {
-  position: relative;
-  padding: 100px 0;
-  @media screen and (max-width: 1024px) {
-    padding: 50px 0;
-  }
 }
 
 .cv-block {
@@ -76,29 +47,4 @@
 
 .cv-text {
   font-size: 20px;
-}
-
-.foto-bg {
-  background-color: $color_accent;
-}
-
-.foto-img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  &:hover,
-  &:focus {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-  }
-  @media screen and (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.decor-7 {
-  position: absolute;
-  top: -120px;
-  left: 0;
-  z-index: -1;
 }

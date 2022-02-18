@@ -1,12 +1,22 @@
-@import './variables';
-@import './common';
-@import './header';
-@import './hero';
-@import './about';
-@import './_counters';
-@import './_services';
-@import './contacts';
-@import './gallery';
-@import './footer';
+@import "./variables";
+@import "./common";
 
-@import './cv';
+@import "./header";
+@import "./hero";
+@import "./presentation";
+@import "./counters";
+@import "./offer";
+@import "./contacts";
+@import "./footer";
+
+@import "./dev";
+@import "./top";
+
+@import "./decor";
+
+@import "./about";
+@import "./cv";
+
+@import "./portfolio";
+
+@import "./services";
