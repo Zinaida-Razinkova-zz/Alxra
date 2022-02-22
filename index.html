@@ -92,7 +92,7 @@
               <img
                 class="hero-img"
                 src="./images/alx.png"
-                alt="Фото Алексей Разиньков"
+                alt="Инженер-конструктор Алексей Разиньков"
                 width="750"
               />
             </div>
@@ -103,7 +103,7 @@
         <div class="container">
           <div class="row row-30 align-items-center">
             <div class="col-md-6 col-lg-5">
-              <img src="./images/alx-3.jpg" alt="Портрет" width="400" />
+              <img src="./images/alx-3.jpg" alt="Фото Алексей Разиньков" width="400" />
             </div>
             <div class="col-md-6 col-lg-7">
               <h3>Обо мне</h3>
@@ -140,7 +140,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div>
                 <div>
-                  <h3 class="counter animated-first">20+</h3>
+                  <h3 id="animated-years" class="counter animated-counter">20</h3>
                   <p class="counter-title">
                     ЛЕТ <br />
                     ОПЫТА
@@ -151,7 +151,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div>
                 <div >
-                  <h3 class="counter animated-first">54</h3>
+                  <h3 id="animated-projects" class="counter animated-first">54</h3>
                   <p class="counter-title">ЗАВЕРШЁННЫХ ПРОЕКТА</p>
                 </div>
               </div>
@@ -159,7 +159,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div>
                 <div>
-                  <h3 class="counter animated-first">400</h3>
+                  <h3 id="animated-products" class="counter ">400</h3>
                   <p class="counter-title">ГОТОВЫХ ИЗДЕЛИЙ</p>
                 </div>
               </div>
@@ -183,12 +183,13 @@
         <div class="container">
           <h6>УСЛУГИ</h6>
           <h3>Что я предлагаю</h3>
+          <p> <a href="services.html#cooperation">Этапы сотрудничества</a></p>
           <div class="owl-carousel owl-theme">
             <div class="offer-content">
               <svg class="offer-svg" width="40" height="40">
                 <use class="" href="./images/sprite.svg#3d"></use>
               </svg>
-              <h4 class="offer-title">3D моделирование</h4>
+              <h4 class="offer-title"><a href="services.html#modeling">3D моделирование</a></h4>
               <p class="offer-paragraf">
                 Выполнение 3D моделирования по чертежам заказчика
               </p>
@@ -197,7 +198,7 @@
               <svg class="offer-svg" width="40" height="40">
                 <use class="" href="./images/sprite.svg#pencil"></use>
               </svg>
-              <h4 class="offer-title">Чертежи</h4>
+              <h4 class="offer-title"><a href="services.html#blueprints">Чертежи</a></h4>
               <p class="offer-paragraf">
                 Выполнение чертежей по эскизам заказчика
               </p>
@@ -213,7 +214,7 @@
               <svg class="offer-svg" width="40" height="40">
                 <use class="" href="./images/sprite.svg#engineering"></use>
               </svg>
-              <h4 class="offer-title">Проектирование</h4>
+              <h4 class="offer-title"><a href="services.html#projection">Проектирование</a></h4>
               <p class="offer-paragraf">
                 Расчёт и разработка изделий по данным заказчика
               </p>
@@ -222,7 +223,7 @@
               <svg class="offer-svg" width="40" height="40">
                 <use class="" href="./images/sprite.svg#cogs"></use>
               </svg>
-              <h4 class="offer-title">Комплектация</h4>
+              <h4 class="offer-title"><a href="services.html#equipment">Комплектация</a></h4>
               <p class="offer-paragraf">
                 Указанием суммарного количества материала и покупных изделий.
               </p>
@@ -329,25 +330,25 @@
           </div>
           <div class="col-sm-3 col-md-3 col-lg-3 footer-block">
             <p>Соцсети:</p>
-            <ul class="footer-list">
-              <li class="footer-item">
+            <ul class="social-list">
+              <li class="social-item">
                 <a
                   href="https://www.instagram.com/alxr.engineer/"
                   target="_blank"
                 >
                   <svg width="22" height="22">
                     <use
-                      class="footer-icon"
+                      class="social-icon"
                       href="./images/sprite.svg#instagram"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-item">
+              <li class="social-item">
                 <a href="https://www.facebook.com/alxraaz" target="_blank">
                   <svg width="22" height="22">
                     <use
-                      class="footer-icon"
+                      class="social-icon"
                       href="./images/sprite.svg#facebook"
                     ></use>
                   </svg>
@@ -379,6 +380,7 @@
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/top.js"></script>
+    <script src="./js/counters.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

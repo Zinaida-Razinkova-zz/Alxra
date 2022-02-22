@@ -1,11 +1,76 @@
 .services {
-  padding-top: 164px;
+  padding-top: 110px;
   padding-bottom: 50px;
   background-color: $color_light;
 }
 
-.services-block {
-  height: 700px;
+.services-block,
+.services-sidebar__box {
+  padding: 30px;
+  margin-bottom: 40px;
   background-color: #fff;
   box-shadow: 3px 3px 9px 0 rgba(107, 107, 107, 0.14);
+}
+
+.services-block img {
+  margin: 0 auto;
+}
+
+.services h2 {
+  position: relative;
+  font-family: $font_details;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.services h2::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #d9d9d9 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.services p {
+  font-family: $font_basic;
+  margin-top: 30px;
+}
+
+.services-sidebar__box p {
+margin: 0;
+}
+
+.services-block ul,
+.services-sidebar__box ul {
+  padding-left: 30px;
+  margin: 0;
+  }
+
+.services-sidebar__box a {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color_accent2;
+  }
+}
+
+.services-sidebar__box .social-icon{
+  fill: $color_accent;
+  &:hover,
+  &:focus {
+    fill: $color_accent2;
+  }
+}
+
+
+.services-sidebar__box-wrapper{
+  display: flex;
+}
+
+.services-sidebar__box img{
+margin-bottom: 20px;
 }

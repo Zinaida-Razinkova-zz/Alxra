@@ -15,7 +15,7 @@
 }
 
 .header-nav {
-  height: 114px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@
 .header-menu__item {
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    color: $color_accent;
   }
 }
 

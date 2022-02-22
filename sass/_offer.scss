@@ -33,13 +33,13 @@
     transition: all 0.3s ease-in-out;
     transform: scale(1.05);
     background-color: $color_accent;
-    .services-svg {
+    .offer-svg {
       fill: #fff;
     }
-    .services-title {
+    .offer-title {
       color: #fff;
     }
-    .services-paragraf {
+    .offer-paragraf {
       color: #fff;
     }
   }
@@ -60,4 +60,12 @@
 
 .offer-content svg {
   fill: $color_accent2;
+}
+
+.offer a {
+  color: inherit;
+  &:hover,
+  &:focus {
+    color: $color_accent2;
+  }
 }
